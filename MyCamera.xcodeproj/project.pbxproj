@@ -12,6 +12,7 @@
 		1010E75522D98FD600DE1B2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1010E75322D98FD600DE1B2F /* Main.storyboard */; };
 		1010E75722D98FD800DE1B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1010E75622D98FD800DE1B2F /* Assets.xcassets */; };
 		1010E75A22D98FD800DE1B2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1010E75822D98FD800DE1B2F /* LaunchScreen.storyboard */; };
+		1010E76222DB5EB100DE1B2F /* EffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1010E76122DB5EB100DE1B2F /* EffectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1010E75622D98FD800DE1B2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1010E75922D98FD800DE1B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1010E75B22D98FD800DE1B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1010E76122DB5EB100DE1B2F /* EffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				1010E74F22D98FD600DE1B2F /* AppDelegate.swift */,
 				1010E75122D98FD600DE1B2F /* ViewController.swift */,
 				1010E75322D98FD600DE1B2F /* Main.storyboard */,
+				1010E76122DB5EB100DE1B2F /* EffectViewController.swift */,
 				1010E75622D98FD800DE1B2F /* Assets.xcassets */,
 				1010E75822D98FD800DE1B2F /* LaunchScreen.storyboard */,
 				1010E75B22D98FD800DE1B2F /* Info.plist */,
@@ -137,6 +140,7 @@
 			files = (
 				1010E75222D98FD600DE1B2F /* ViewController.swift in Sources */,
 				1010E75022D98FD600DE1B2F /* AppDelegate.swift in Sources */,
+				1010E76222DB5EB100DE1B2F /* EffectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9D754XH7P5;
 				INFOPLIST_FILE = MyCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9D754XH7P5;
 				INFOPLIST_FILE = MyCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
