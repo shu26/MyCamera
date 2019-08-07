@@ -18,14 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bAQ-bd-VOe">
-                                <rect key="frame" x="16" y="44" width="382" height="728"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEK-eJ-9Vg">
-                                <rect key="frame" x="16" y="802" width="382" height="30"/>
+                                <rect key="frame" x="50" y="376" width="144" height="144"/>
                                 <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="AmC-nV-gfK"/>
+                                    <constraint firstAttribute="height" constant="144" id="IRB-LB-Xw9"/>
+                                    <constraint firstAttribute="width" secondItem="yEK-eJ-9Vg" secondAttribute="height" multiplier="1:1" id="YOd-ih-Ak3"/>
                                 </constraints>
                                 <state key="normal" title="カメラを起動する">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -34,26 +32,38 @@
                                     <action selector="cameraButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dsn-aq-fCP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jww-P3-YHW">
+                                <rect key="frame" x="220.5" y="376" width="144" height="144"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jww-P3-YHW" secondAttribute="height" multiplier="1:1" id="nfq-ko-DI1"/>
+                                </constraints>
+                                <state key="normal" title="アルバム">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="PhotoLibraryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="azu-Ac-e2Q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yEK-eJ-9Vg" secondAttribute="bottom" constant="30" id="2Cm-Mf-fVx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yEK-eJ-9Vg" secondAttribute="trailing" constant="16" id="4Qs-QY-XxI"/>
-                            <constraint firstItem="bAQ-bd-VOe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7oc-UZ-YkO"/>
-                            <constraint firstItem="yEK-eJ-9Vg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8FR-2b-2Hj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bAQ-bd-VOe" secondAttribute="trailing" constant="16" id="ehr-Fq-rxu"/>
-                            <constraint firstItem="bAQ-bd-VOe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jAg-q1-RK6"/>
-                            <constraint firstItem="yEK-eJ-9Vg" firstAttribute="top" secondItem="bAQ-bd-VOe" secondAttribute="bottom" constant="30" id="x9W-3s-HJH"/>
+                            <constraint firstItem="jww-P3-YHW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IDP-wq-PHZ"/>
+                            <constraint firstItem="yEK-eJ-9Vg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IXe-yY-Jes"/>
+                            <constraint firstItem="jww-P3-YHW" firstAttribute="height" secondItem="yEK-eJ-9Vg" secondAttribute="height" id="VRU-g8-XC5"/>
+                            <constraint firstItem="yEK-eJ-9Vg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-85.5" id="WK0-Dt-1Mp"/>
+                            <constraint firstItem="jww-P3-YHW" firstAttribute="leading" secondItem="yEK-eJ-9Vg" secondAttribute="trailing" constant="27" id="a3P-6O-wEj"/>
+                            <constraint firstItem="jww-P3-YHW" firstAttribute="width" secondItem="yEK-eJ-9Vg" secondAttribute="width" id="d8O-SV-09V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="pictureImage" destination="bAQ-bd-VOe" id="VTj-24-Wj7"/>
                         <segue destination="VSd-Eq-XbY" kind="show" identifier="showEffectView" id="cL5-9C-0LI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="18.75"/>
         </scene>
         <!--Effect View Controller-->
         <scene sceneID="5Ko-OB-gI7">
